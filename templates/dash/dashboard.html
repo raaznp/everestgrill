@@ -1,0 +1,384 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Everest Grill">
+    <meta name="keywords" content="Everest Grill & Restro, Everest Grill, Restro in Tallin, Restro in Estonia, Best Restro in Estonia, Best Restaurant in Estonia, Best Restri in Tallin, Best Restaurant in Tallin, Food, Restaurant, Estonia, Tallin, Authentic Food in Tallin, Authentic Food in Estonia, Authentic Food in Europe">
+    <meta name="type" content="Everest Grill & Restro">
+    <meta name="title" content="Everest Grill & Restro">
+    <meta name="description" content="Everest Grill & Restro">
+    <title>Login - Everest Grill & Restro</title>
+    <!-- ==============favicon=============== -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'assets/img/log.png' %}" />
+    <!-- ======Css Files====== -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/font/icofont.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animation/aos.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nouislider.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}">
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div id="container" class="container-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+            </div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+    <div>
+        <!-- header  -->
+        <header>
+            <!-- header  -->
+            <div class="header header-1">
+                <!-- container  -->
+                <div class="container">
+                    <!-- header inner -->
+                    <div class="header-inner">
+                        <div class="logo">
+                            <a href="index.html"><img src="{% static 'assets/img/logo/everest grill logo.jpg' %}" alt="Everest Grill & Restro" class="logo-img"></a>
+                        </div>
+                        <div class="header-right">
+                            <div class="header-menu d-none d-lg-block">
+                                <nav class="cf-header-menu" id="header-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li class="has-submenu"><a href="#">About Us</a>
+                                            <ul class="submenu">
+                                                <li><a href="#">Team</a></li>
+                                                <li><a href="#">Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Menu</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Reservation</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header-right-search-phone d-none d-lg-block ml-35" id="search">
+                                    <a href="{% url 'logout' %}" class="header-phone" ><img src="{% static 'assets/img/icon/call.png' %}" alt="Call Us" class="contact-icon"> +880 123 456 789</a>
+                            </div>
+                            <div class="d-lg-none dr-navbar-mobile-sign side-toggle">
+                                <!-- <span class="headeer-navigaiton"><i class="icofont-navigation-menu"></i></span> -->
+                                <div class="dr-navbar-sign menu-tab">
+                                    <span class="dr-line-1"></span>
+                                    <span class="dr-line-2"></span>
+                                    <span class="dr-line-3"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- header inner end  -->
+
+                </div>
+                <!-- container end  -->
+            </div>
+            <!-- nav end -->
+        </header>
+        <!-- header end  -->
+        <!-- dr-sidebar-information-area-start -->
+        <div class="dr-sidebar-info side-info">
+            <div class="dr-sidebar-logo-wrapper mb-25">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-8">
+                        <div class="dr-sidebar-logo">
+                            <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt="logo-img"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-4">
+                        <div class="dr-sidebar-close-wrapper text-end">
+                            <button class="dr-sidebar-close side-info-close"><i class="icofont-close-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dr-sidebar-menu-wrapper fix">
+                <div class="cf-header-menu"></div>
+            </div>
+
+            <div class="dr-sidebar-btn-wrap mt-40">
+                <a href="#"><span class="icofont-shopping-cart"><span class="cart-count">4</span></span></a>
+                <a href="#"><i class="icofont-ui-user"></i></a>
+            </div>
+
+            <div class="dr-sidebar-contact-wrapper mt-40">
+                <div class="dr-sidebar-contact mb-40">
+                    <h4 class="dr-sidebar-contact-title">Contact Info</h4>
+                    <span class="sidebar-address"><i class="icofont-google-map"></i><span>4929 Thorn Street Crow heart, WY 82512</span> </span>
+                    <a href="tel:+1(251)410-1010"><i class="icofont-phone"></i><span>+1 (251) 410-1010</span></a>
+                    <a href="mailto:example@gmail.com" class="theme-3"><i class="icofont-envelope-open"></i><span><span>example@gmail.com</span></span></a>   
+                </div>
+
+                <div class="dr-sidebar-social mt-40 mb-30">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="youtube"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-overlay"></div>
+        <!-- dr-sidebar-information-area-end -->
+        <div class="body-wrapper">
+            {% block maincontent %}
+            <section>
+                <div class="about about-1 cpy-8">
+                    <!-- container  -->
+                    <div class="container">
+                        <!-- row  -->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="about-img">
+                                    <img src="{% static 'assets/img/image/exparience.png' %}" alt="">
+                                </div>
+                            </div>
+            
+                            <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="h-100 d-flex align-items-center pl-40">
+                                    <div class="about-details">
+                                        <span class="sm-title">Sign In</span>
+                                        <h2 class="about-title mb-3">
+                                            Sign in to your account
+                                        </h2>
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <form method="post">
+                                                    {% csrf_token %}
+                                                    {{ form|crispy }}
+                                                    <div class="form-group">
+                                                        <div class="col-md-10 col-md-offset-2">
+                                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- row end  -->
+                    </div>
+                    <!-- container end  -->
+                </div>
+            </section>
+          
+
+
+
+            {% endblock maincontent %}
+            <!-- ========================Footer ============= -->
+            <footer>
+                <!-- footer section  -->
+                <div class="footer-section footer-1" data-background="{% static 'assets/img/footer-bg.png' %}">
+                    <!-- container  -->
+                    <div class="container">
+                        <!-- row  -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 my-2 smpadright40" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="footer-content-wrapper">
+                                    <div class="footer-logo mb-4">
+                                        <img src="{% static 'assets/img/logo/logo-white.png' %}" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit consectetur, ame adipiscing elit, sed do</p>
+                                    <ul class="address">
+                                        <li><span class="icofont-location-pin"></span>
+                                            <p class="address-info">4920 Trails End Road Ft United States, FL 33311</p>
+                                        </li>
+
+                                        <li><span class="icofont-email"></span>
+                                            <div class="address-inner">
+                                                <p class="address-info"><a href="mailto:nfo@example.com">nfo@example.com</a></p>
+                                                <p class="address-info"><a href="mailto:test@example.com">test@example.com</a></p>
+                                            </div>
+                                        </li>
+
+                                        <li><span class="icofont-ui-call"> </span>
+                                            <div class="address-inner">
+                                                <p class="address-info"><a href="tel:+123456679123">+123 456 679 123</a></p>
+                                                <p class="address-info"><a href="tel:+123456789">+123 456 789</a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 my-2 padleft40" data-aos="fade-up" data-aos-duration="1500">
+                                <div class="footer-content-wrapper">
+                                    <div class="footer-sec-head mb-4">
+                                        <h4 class="footer-widget-title">Quick links</h4>
+                                    </div>
+                                    <ul class="qu-link">
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Pizza</a></li>
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Burger</a></li>
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Cake</a></li>
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Chocolate</a></li>
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Ice Cream</a></li>
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Pizza</a></li>
+                                        <li class="foot-list"><a href="menu.html" class="footer-link">Burger</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 my-2 padright40" data-aos="fade-up" data-aos-duration="2000">
+                                <div class="footer-content-wrapper">
+                                    <div class="footer-sec-head mb-4">
+                                        <h4 class="footer-widget-title">Instagram</h4>
+                                    </div>
+                                    <ul class="insta-feed">
+                                        <li class="foot-list">
+                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
+                                        </li>
+                                        <li class="foot-list">
+                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/2.png' %}" alt=""></a>
+                                        </li>
+                                        <li class="foot-list">
+                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/3.png' %}" alt=""></a>
+                                        </li>
+                                        <li class="foot-list">
+                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/4.png' %}" alt=""></a>
+                                        </li>
+                                        <li class="foot-list">
+                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/5.png' %}" alt=""></a>
+                                        </li>
+                                        <li class="foot-list">
+                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/6.png' %}" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-6 my-2" data-aos="fade-up" data-aos-duration="2500">
+                                <div class="footer-content-wrapper">
+                                    <div class="footer-sec-head mb-4">
+                                        <h4 class="footer-widget-title">Subscribe</h4>
+                                    </div>
+
+                                    <p class="subscribe-des">
+                                        Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et
+                                    </p>
+
+                                    <form class="hero-form" action="#">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control subscribtion-input" placeholder="Enter Your Email">
+                                            <button type="submit" class="custom-btn"><span
+                                                    class="icofont-location-arrow"></span></button>
+                                        </div>
+                                    </form>
+                                    <ul class="social-ul">
+                                        <li class="social-list">
+                                            <a href="#" class="social-link"><span class="icofont-facebook"></span></a>
+                                        </li>
+
+                                        <li class="social-list">
+                                            <a href="#" class="social-link"><span class="icofont-twitter"></span></a>
+                                        </li>
+
+                                        <li class="social-list">
+                                            <a href="#" class="social-link"><span class="icofont-skype"></span></a>
+                                        </li>
+
+                                        <li class="social-list">
+                                            <a href="#" class="social-link"><span class="icofont-instagram"></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row end  -->
+                    </div>
+                    <!-- container end  -->
+                    <!-- last footer  -->
+                    <div class="last-footer">
+                        <div class="container">
+                            <div class="row" >
+                                <div class="text-center">
+                                    <p class="copyright-text">&copy; 2024 All Rights Reserved - Everest Grill | Powered by <a class="copyright-link" href="https://merocms.com">MeroCMS</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- last footer end  -->
+                </div>
+                <!-- footer section end  -->
+            </footer>
+            <!-- ========================Footer end============= -->
+
+
+        </div>
+    <!-- =======================body wrapper end========= -->
+    </div>
+    <!-- ====main wrapper end == -->
+
+    <!-- ======Scripts======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'assets/js/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/animation/aos.js' %}"></script>
+    <script src="{% static 'assets/js/meanmenu.js' %}"></script>
+    <script src="{% static 'assets/js/mixitup/mixitup.min.js' %}"></script>
+    <script src="{% static 'assets/js/nouislider.js' %}"></script>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+    <script src="{% static 'assets/js/mixitup.js' %}"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+   <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+   <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    let revealContainers = document.querySelectorAll(".about-img");
+    revealContainers.forEach((container) => {   
+    let image = container.querySelector("img");
+    let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: container,
+      toggleActions: "restart none none reset"
+    }
+  });
+    tl.set(container, { autoAlpha: 1 });
+    tl.from(container, 1.5, {
+    xPercent: -100,
+    ease: Power2.out
+  });
+    tl.from(image, 1.5, {
+    xPercent: 100,
+    scale: 1.3,
+    delay: -1.5,
+    ease: Power2.out
+  });
+});
+</script>
+
+<!-- Preloader -->
+<script src="{% static 'assets/js/jquery/jquery.min.js' %}"></script>
+<script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('#container').addClass('loaded');
+        if ($('#container').hasClass('loaded')) {
+            $('#preloader').delay(2000).queue(function() {
+                $(this).remove();
+            });}
+        }, 
+    2000);});
+</script>
+</body>
+</html>

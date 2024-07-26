@@ -1,0 +1,9 @@
+/* ================= Custom CSS ======================= */
+
+  
+  .last-footer .copyright-link {
+    color: #fff;
+  }
+  .last-footer .copyright-link:hover {
+    color: #cc3333;
+  }
