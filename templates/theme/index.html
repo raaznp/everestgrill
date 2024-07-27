@@ -230,7 +230,7 @@
             <!-- container  -->
             <div class="container">
                 <!-- row  -->
-                <div class="row">
+                <div class="row">  
                     <div class="col-lg-6 col-md-6 mb-4">
                         <div class="about-img">
                             <img src="{% static 'assets/img/banner/about-banner.png' %}" alt="">
@@ -292,6 +292,7 @@
         </div>
     </section>
     <!-- =========About end====== -->
+
     <!-- ========Product section========= -->
     <section>
         <div class="all-product all-product-1">
@@ -309,9 +310,9 @@
                             <div class="product-cat mb-40">
                                 <div class="controls">
                                     <ul class="cat-menu">
-                                        <li class="cat-menu-li " data-filter="all">
+                                        <li class="cat-menu-li " data-filter="appetizers">
                                             <img src="{% static 'assets/img/menu-icon/7.webp' %}" alt="" class="cat-icon">
-                                            <span class="cat-name">All</span>
+                                            <span class="cat-name">Appetizers</span>
                                         </li>
                                         <li class="cat-menu-li " data-filter=".pizza">
                                             <img src="{% static 'assets/img/menu-icon/1.webp' %}" alt="" class="cat-icon">
@@ -345,72 +346,343 @@
                     <!-- row end  -->
                     <!-- row  -->
                     <div class="row" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4 mix pizza">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
                             <div class="product-card">
                                 <div class="product-img">
-                                    <a href="shop.html"><img src="{% static 'assets/img/product/pizza.jpg' %}" alt="Pizza" width="370" height="340"></a>
+                                    <img src="{% static 'assets/menu/appetizers/papadom-with-mint-sauce.jpg' %}" alt="Papadom with Mint Sauce" height="250">
                                 </div>
+                                <p class="product-price">€3.50</p>
                                 <div class="product-details">
-                                    <a href="shop.html" class="product-name">Grilled Fingerlings Pizza</a>
-                                    <p class="product-sm-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+                                    <span class="product-name">Papadom with Mint Sauce</span>
+                                    <p class="product-sm-des">Papad with mint sauce.<br/><br/></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4 mix asian">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
                             <div class="product-card">
                                 <div class="product-img">
-                                    <a href="shop.html"><img src="{% static 'assets/img/product/cfc.webp' %}" alt="Crunchy Fried Chicken" width="370" height="340"></a>
+                                    <img src="{% static 'assets/menu/appetizers/crispy-wings.jpg' %}" alt="Crispy Wings" height="250">
                                 </div>
+                                <p class="product-price">€10.50</p>
                                 <div class="product-details">
-                                    <a href="shop.html" class="product-name">Crunchy Fried Chicken</a>
-                                    <p class="product-sm-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+                                    <span class="product-name">Crispy Wings</span>
+                                    <p class="product-sm-des">Chicken wings with onion pro, capsicum, soy & sweet</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4 mix burger">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
                             <div class="product-card">
                                 <div class="product-img">
-                                    <a href="shop.html"><img src="{% static 'assets/img/product/burger.jpg' %}" alt="Burger" width="370" height="340"></a>
+                                    <img src="{% static 'assets/menu/appetizers/spring-roll-with-vegetable.jpg' %}" alt="Spring Roll with Vegetable" height="250">
                                 </div>
+                                <p class="product-price">€6.00</p>
                                 <div class="product-details">
-                                    <a href="shop.html" class="product-name">Burger</a>
-                                    <p class="product-sm-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+                                    <span class="product-name">Spring Roll with Vegetable</span>
+                                    <p class="product-sm-des">Crispy pancake filled with vegetable</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4 mix salad">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
                             <div class="product-card">
                                 <div class="product-img">
-                                    <a href="shop.html"><img src="{% static 'assets/img/product/dumbiryani.webp' %}" alt="Chicken Dum Biryani" width="370" height="340"></a>
+                                    <img src="{% static 'assets/menu/appetizers/chicken-spring-roll.webp' %}" alt="Chicken Spring Roll" height="250">
                                 </div>
+                                <p class="product-price">€6.50</p>
                                 <div class="product-details">
-                                    <a href="shop.html" class="product-name">Chicken Dum Biryani</a>
-                                    <p class="product-sm-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+                                    <span class="product-name">Chicken Spring Roll</span>
+                                    <p class="product-sm-des">Crispy pancake filled with chicken and vegetable</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4 mix bakery">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
                             <div class="product-card">
                                 <div class="product-img">
-                                    <a href="shop.html"><img src="{% static 'assets/img/product/chickenchilly.jpg' %}" alt="Chicken Chilly" width="370" height="340"></a>
+                                    <img src="{% static 'assets/menu/appetizers/shrimp-spring-roll.jpg' %}" alt="Shrimp Spring Roll" height="250">
                                 </div>
+                                <p class="product-price">€7.00</p>
                                 <div class="product-details">
-                                    <a href="shop.html" class="product-name">Chicken Chilly</a>
-                                    <p class="product-sm-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+                                    <span class="product-name">Shrimp Spring Roll</span>
+                                    <p class="product-sm-des">Crispy pancake with shrimps and veg</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-4 mix drink">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
                             <div class="product-card">
                                 <div class="product-img">
-                                    <a href="shop.html"><img src="{% static 'assets/img/product/jholmomo.jpg' %}" alt="Jhol Momo" width="370" height="340"></a>
+                                    <img src="{% static 'assets/menu/appetizers/everest-spicy-spring-roll.jpeg' %}" alt="Everest Spicy Spring Roll" height="250">
                                 </div>
+                                <p class="product-price">€7.50</p>
                                 <div class="product-details">
-                                    <a href="shop.html" class="product-name">Jhol Momo</a>
-                                    <p class="product-sm-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis</p>
+                                    <span class="product-name">Everest Spicy Spring Roll</span>
+                                    <p class="product-sm-des">Crispy pancake with pork, chicken, shrimps and veg</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/crispy-honey-chicken.jpg' %}" alt="Crispy Honey Chicken" height="250">
+                                </div>
+                                <p class="product-price">€10.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Crispy Honey Chicken</span>
+                                    <p class="product-sm-des">Crispy chicken pineapple green piece with honey sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/thai-style-prawns.jpg' %}" alt="Thai Style Prawns" height="250">
+                                </div>
+                                <p class="product-price">€12.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Thai Style Prawns</span>
+                                    <p class="product-sm-des">Onion broccoli,capsicum with thai red sauce</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/crispy-fried-vegetable.jpg' %}" alt="Crispy Fried Vegetable" height="250">
+                                </div>
+                                <p class="product-price">€8.000</p>
+                                <div class="product-details">
+                                    <span class="product-name">Crispy Fried Vegetable</span>
+                                    <p class="product-sm-des">Crispy fried cabbage, capsicum, onion, broccoli, carrot & beans</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/paneer-pakora-with-mint-sauce.jpg' %}" alt="Paneer Pakora With Mint Sauce" height="250">
+                                </div>
+                                <p class="product-price">€8.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Paneer Pakora With Mint Sauce</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/govi-pakora.jpg' %}" alt="Govi Pakora" height="250">
+                                </div>
+                                <p class="product-price">€8.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Govi Pakora</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/vegetable-manchurian.jpg' %}" alt="Vegetable Manchurian" height="250">
+                                </div>
+                                <p class="product-price">€9.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Vegetable Manchurian</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/cheese-balls.jpg' %}" alt="Cheese Balls (Normal/Spicy)" height="250">
+                                </div>
+                                <p class="product-price">€10.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Cheese Balls (Normal/Spicy)</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/chicken-tikka-with-mint-sauce.jpeg' %}" alt="Chicken Tikka With Mint Sauce" height="250">
+                                </div>
+                                <p class="product-price">€12.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Chicken Tikka With Mint Sauce</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/tandoor-wings-with-mint-sauce.jpg' %}" alt="Tandoor Wings With Mint Sauce" height="250">
+                                </div>
+                                <p class="product-price">€10.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Tandoor Wings With Mint Sauce</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/crunchy-and-crispy-chicken-with-bone.jpg' %}" alt="Crunchy And Crispy Chicken with Bone" height="250">
+                                </div>
+                                <p class="product-price">€9.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Crunchy And Crispy Chicken with Bone</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/crispy-honey-duck.webp' %}" alt="Crispy Honey Duck (L)" height="250">
+                                </div>
+                                <p class="product-price">€12.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Crispy Honey Duck (L)</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/calamari-rings.jpg' %}" alt="Calamari Rings" height="250">
+                                </div>
+                                <p class="product-price">€7.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Calamari Rings</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/honey-prawns.jpg' %}" alt="Honey Prawns" height="250">
+                                </div>
+                                <p class="product-price">€14.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Honey Prawns</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/garlic-prawns.jpg' %}" alt="Garlic Prawns" height="250">
+                                </div>
+                                <p class="product-price">€14.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Garlic Prawns</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/dry-chilly-pork.jpg' %}" alt="Dry Chilly Pork with Mushroom/Vegetable" height="250">
+                                </div>
+                                <p class="product-price">€10.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Dry Chilly Pork with Mushroom/Vegetable</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/vegetable-samosa.jpg' %}" alt="Vegetable Samosa" height="250">
+                                </div>
+                                <p class="product-price">€8.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Vegetable Samosa</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/sweet-potato-soy-potato.jpg' %}" alt="Sweet Potato/ Soy Potato" height="250">
+                                </div>
+                                <p class="product-price">€7.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Sweet Potato/Soy Potato</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/chicken-katti-roll.jpg' %}" alt="Chicken Katti Roll" height="250">
+                                </div>
+                                <p class="product-price">€7.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Chicken Katti Roll</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/vegetable-katti-roll.jpg' %}" alt="Vegetable Katti Roll" height="250">
+                                </div>
+                                <p class="product-price">€7.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Vegetable Katti Roll</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/everest-grill-katti-roll.jpg' %}" alt="Everest Grill Katti Roll" height="250">
+                                </div>
+                                <p class="product-price">€9.00</p>
+                                <div class="product-details">
+                                    <span class="product-name">Everest Grill Katti Roll</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/honey-egg-plant.jpeg' %}" alt="Honey Eggplant" height="250">
+                                </div>
+                                <p class="product-price">€8.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Honey Eggplant</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="{% static 'assets/menu/appetizers/soy-egg-plant.jpg' %}" alt="Soy Eggplant" height="250">
+                                </div>
+                                <p class="product-price">€8.50</p>
+                                <div class="product-details">
+                                    <span class="product-name">Soy Eggplant</span>
+                                    <p class="product-sm-des"></p>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- row end  -->
                 </div>
@@ -420,6 +692,7 @@
         </div>
     </section>
     <!-- ========Product section end========= -->
+
 
     <!-- ===========our team========= -->
     <section>
