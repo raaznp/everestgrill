@@ -3784,6 +3784,7 @@ ul.social-ul {
   margin-left: 35px;
 }
 .header-right {
+  color: #cc3333;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -3796,11 +3797,13 @@ ul.social-ul {
 }
 .header-right-search-phone a:not(:first-child) {
   margin-left: 35px;
-}
-
-.header-right-search-phone a:hover {
   color: #cc3333;
 }
+
+.header-right-search-phone a:hover{
+  color: #cc3333;
+}
+
 .address-info a {
   color: #fff;
 }
