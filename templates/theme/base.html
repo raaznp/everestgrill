@@ -11,7 +11,10 @@
     <meta name="description" content="Everest Grill & Restro">
     <title>{% block title%}{% endblock title %} - Everest Grill & Restro</title>
     <!-- ==============favicon=============== -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'assets/img/log.png' %}" />
+    <link rel="manifest" href="{% static '/assets/ico/manifest.json' %}">
+    <link rel="shortcut icon" type="image/ico" href="{% static '/assets/ico/favicon.ico' %}" sizes="16x16 32x32 48x48 64x64 128x128 256x256">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" type="image/ico" href="{% static '/assets/ico/favicon.ico' %">
     <!-- ======Css Files====== -->
     <link rel="stylesheet" href="{% static 'assets/css/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/css/swiper/swiper-bundle.min.css' %}">
