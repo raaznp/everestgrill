@@ -7,3 +7,18 @@
   .last-footer .copyright-link:hover {
     color: #cc3333;
   }
+
+  .header-right .header-right-search-phone a {
+    color: #cc3333;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  .header-right .header-right-search-phon a:not(:first-child) {
+    margin-left: 35px;
+    color: #cc3333;
+  }
+  
+  .header-right .header-right-search-phon a:hover{
+    color: #cc3333;
+  }
+  

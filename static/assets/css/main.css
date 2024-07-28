@@ -3784,26 +3784,23 @@ ul.social-ul {
   margin-left: 35px;
 }
 .header-right {
-  color: #cc3333;
   display: flex;
   align-items: center;
   justify-content: end;
 }
 
 .header-right-search-phone a {
-  color: #cc3333;
+  color: #292929;
   transition: 0.3s;
   font-weight: 500;
 }
 .header-right-search-phone a:not(:first-child) {
   margin-left: 35px;
-  color: #cc3333;
 }
 
-.header-right-search-phone a:hover{
+.header-right-search-phone a:hover {
   color: #cc3333;
 }
-
 .address-info a {
   color: #fff;
 }
