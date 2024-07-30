@@ -1,0 +1,1408 @@
+{% extends 'theme/base2.html' %}
+{% load static %}
+{% block title %}Menu{% endblock title %}
+{% block breadcrumbs %}
+<!-- ========Breadcrumbs section========= -->
+<div class="page-banner" data-background="{% static 'assets/img/page-ban-bg.webp' %}">
+    <!-- container  -->
+    <div class="container">
+        <!-- row  -->
+        <div class="row">
+            <div class="page-ban-content">
+                <h1 class="page-head" data-aos="fade-up" data-aos-duration="1000">Menu</h1>
+                <div class="breadcrumb-list" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="{% url 'home' %}" class="page-route-link">Home</a>
+                    <span class="devider">/</span>
+                    <span>Menu</span>
+                </div>
+            </div>
+        </div>
+        <!-- row end  -->
+    </div>
+    <!-- container end -->
+</div>
+<!-- ========End Breadcrumbs section========= -->
+{% endblock breadcrumbs %}
+{% block maincontent %}
+<!-- ========Product section========= -->
+<section>
+    <div class="all-product all-product-1">
+        <!-- product inner  -->
+        <div class="product-inner cpy-8" data-background="{% static 'assets/img/product/bg.webp' %}">
+            <!-- container  -->
+            <div class="container">
+                <!-- row  -->
+                <div class="row">
+                    <div class="section-head text-center">
+                        <span class="sm-title ">Special Menu</span>
+                        <h2 class="sec-title">
+                            Our Specials Menu
+                        </h2>
+                        <div class="product-cat mb-40">
+                            <div class="controls">
+                                <ul class="cat-menu">
+                                    <li class="cat-menu-li " data-filter="all">
+                                        <img src="{% static 'assets/img/menu-icon/7.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">All</span>
+                                    </li>
+                                    <li class="cat-menu-li " data-filter=".appetizers">
+                                        <img src="{% static 'assets/img/menu-icon/7.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Appetizers</span>
+                                    </li>
+                                    <li class="cat-menu-li " data-filter=".tandoor-bread">
+                                        <img src="{% static 'assets/img/menu-icon/1.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Tandoor Bread</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".soups">
+                                        <img src="{% static 'assets/img/menu-icon/2.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Soup</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".salads">
+                                        <img src="{% static 'assets/img/menu-icon/3.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Salad</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".veg-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Veg Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".chicken-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/5.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Chicken Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".pork-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/6.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Pork Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".lamb-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/6.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Lamb Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".duck-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/6.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Duck Dishes</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end  -->
+                <!-- row  -->
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/papadom-with-mint-sauce.jpg' %}" alt="Papadom with Mint Sauce" height="250">
+                            </div>
+                            <p class="product-price">€3.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Papadom with Mint Sauce</span>
+                                <p class="product-sm-des">Papad with mint sauce.<br/><br/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/crispy-wings.jpg' %}" alt="Crispy Wings" height="250">
+                            </div>
+                            <p class="product-price">€10.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Wings</span>
+                                <p class="product-sm-des">Chicken wings with onion pro, capsicum, soy & sweet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/spring-roll-with-vegetable.jpg' %}" alt="Spring Roll with Vegetable" height="250">
+                            </div>
+                            <p class="product-price">€6.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Spring Roll with Vegetable</span>
+                                <p class="product-sm-des">Crispy pancake filled with vegetable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/chicken-spring-roll.webp' %}" alt="Chicken Spring Roll" height="250">
+                            </div>
+                            <p class="product-price">€6.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Spring Roll</span>
+                                <p class="product-sm-des">Crispy pancake filled with chicken and vegetable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/shrimp-spring-roll.jpg' %}" alt="Shrimp Spring Roll" height="250">
+                            </div>
+                            <p class="product-price">€7.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Shrimp Spring Roll</span>
+                                <p class="product-sm-des">Crispy pancake with shrimps and veg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/everest-spicy-spring-roll.jpeg' %}" alt="Everest Spicy Spring Roll" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Spicy Spring Roll</span>
+                                <p class="product-sm-des">Crispy pancake with pork, chicken, shrimps and veg</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/crispy-honey-chicken.jpg' %}" alt="Crispy Honey Chicken" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Honey Chicken</span>
+                                <p class="product-sm-des">Crispy chicken pineapple green piece with honey sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/thai-style-prawns.jpg' %}" alt="Thai Style Prawns" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Style Prawns</span>
+                                <p class="product-sm-des">Onion broccoli,capsicum with thai red sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/crispy-fried-vegetable.jpg' %}" alt="Crispy Fried Vegetable" height="250">
+                            </div>
+                            <p class="product-price">€8.000</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Fried Vegetable</span>
+                                <p class="product-sm-des">Crispy fried cabbage, capsicum, onion, broccoli, carrot & beans</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/paneer-pakora-with-mint-sauce.jpg' %}" alt="Paneer Pakora With Mint Sauce" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Paneer Pakora With Mint Sauce</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/govi-pakora.jpg' %}" alt="Govi Pakora" height="250">
+                            </div>
+                            <p class="product-price">€8.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Govi Pakora</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/vegetable-manchurian.jpg' %}" alt="Vegetable Manchurian" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Manchurian</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/cheese-balls.jpg' %}" alt="Cheese Balls (Normal/Spicy)" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Cheese Balls (Normal/Spicy)</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/chicken-tikka-with-mint-sauce.jpeg' %}" alt="Chicken Tikka With Mint Sauce" height="250">
+                            </div>
+                            <p class="product-price">€12.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Tikka With Mint Sauce</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/tandoor-wings-with-mint-sauce.jpg' %}" alt="Tandoor Wings With Mint Sauce" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Tandoor Wings With Mint Sauce</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/crunchy-and-crispy-chicken-with-bone.jpg' %}" alt="Crunchy And Crispy Chicken with Bone" height="250">
+                            </div>
+                            <p class="product-price">€9.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Crunchy And Crispy Chicken with Bone</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/crispy-honey-duck.webp' %}" alt="Crispy Honey Duck (L)" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Honey Duck (L)</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/calamari-rings.jpg' %}" alt="Calamari Rings" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Calamari Rings</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/honey-prawns.jpg' %}" alt="Honey Prawns" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Honey Prawns</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/garlic-prawns.jpg' %}" alt="Garlic Prawns" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Garlic Prawns</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/dry-chilly-pork.jpg' %}" alt="Dry Chilly Pork with Mushroom/Vegetable" height="250">
+                            </div>
+                            <p class="product-price">€10.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Dry Chilly Pork with Mushroom/Vegetable</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/vegetable-samosa.jpg' %}" alt="Vegetable Samosa" height="250">
+                            </div>
+                            <p class="product-price">€8.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Samosa</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/sweet-potato-soy-potato.jpg' %}" alt="Sweet Potato/ Soy Potato" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Sweet Potato/Soy Potato</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/chicken-katti-roll.jpg' %}" alt="Chicken Katti Roll" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Katti Roll</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/vegetable-katti-roll.jpg' %}" alt="Vegetable Katti Roll" height="250">
+                            </div>
+                            <p class="product-price">€7.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Katti Roll</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/everest-grill-katti-roll.jpg' %}" alt="Everest Grill Katti Roll" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Grill Katti Roll</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/honey-egg-plant.jpeg' %}" alt="Honey Eggplant" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Honey Eggplant</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix appetizers">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/appetizers/soy-egg-plant.jpg' %}" alt="Soy Eggplant" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Soy Eggplant</span>
+                                <p class="product-sm-des"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/garlic-naan.webp' %}" alt="Garlic Naan" height="250">
+                            </div>
+                            <p class="product-price">€3.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Garlic Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/butter-naan.jpeg' %}" alt="Butter Naan" height="250">
+                            </div>
+                            <p class="product-price">€3.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Butter Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/cheese-naan.jpg' %}" alt="Cheese Naan" height="250">
+                            </div>
+                            <p class="product-price">€4.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Cheese Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/paneer-naan.jpg' %}" alt="Paneer Naan" height="250">
+                            </div>
+                            <p class="product-price">€5.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Paneer Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/cheese-and-garlic-naan.jpg' %}" alt="Cheese and Garlic Naan" height="250">
+                            </div>
+                            <p class="product-price">€5.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Cheese and Garlic Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/aaloo-naan.jpg' %}" alt="Aaloo Naan" height="250">
+                            </div>
+                            <p class="product-price">€5.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Aaloo Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/bacon-naan.jpg' %}" alt="Bacon Naan" height="250">
+                            </div>
+                            <p class="product-price">€5.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Bacon Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/everest-special-naan.jpg' %}" alt="Everest Special Naan" height="250">
+                            </div>
+                            <p class="product-price">€6.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Naan</span>
+                                <p>Chicken with Indian Spicy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix tandoor-bread">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/tandoor-bread/paneer-garlic-naan.jpg' %}" alt="Paneer Garlic Naan" height="250">
+                            </div>
+                            <p class="product-price">€5.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Paneer Garlic Naan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/tandoori-chicken-salad.jpg' %}" alt="Tandoori Chicken Salad" height="250">
+                            </div>
+                            <p class="product-price">€9.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Tandoori Chicken Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/fresh-green-salad.jpg' %}" alt="Fresh Green Salad" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Fresh Green Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/tandoori-pork-salad.jpg' %}" alt="Tandoori Pork Salad" height="250">
+                            </div>
+                            <p class="product-price">€9.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Tandoori Pork Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/everest-salmon-salad.webp' %}" alt="Salmon Everest Salad" height="250">
+                            </div>
+                            <p class="product-price">€12.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Salmon Everest Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/king-prawn-salad.jpg' %}" alt="King Prawns Salad" height="250">
+                            </div>
+                            <p class="product-price">€12.00</p>
+                            <div class="product-details">
+                                <span class="product-name">King Prawns Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/spicy-beef-thai-salad.webp' %}" alt="Spicy Beef Thai Salad" height="250">
+                            </div>
+                            <p class="product-price">€10.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Spicy Beef Thai Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/bacon-and-cheese-salad.jpg' %}" alt="Bacon & Cheese Salad" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Bacon & Cheese Salad</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix salads">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/salads/raita.jpg' %}" alt="Raita" height="250">
+                            </div>
+                            <p class="product-price">€7.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Raita</span>
+                                <p>Yogurt, Cucumber, Tomato & Indian Spicy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/tomato-cream-soup.jpg' %}" alt="Tomato Cream Soup" height="250">
+                            </div>
+                            <p class="product-price">€6.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Tomato Cream Soup</span>
+                                <p>sweet & sour tomato chicken creamy soup with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/hot-and-sour-chicken-soup.jpg' %}" alt="Hot and Sour Chicken Soup" height="250">
+                            </div>
+                            <p class="product-price">€7.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Hot and Sour Chicken Soup</span>
+                                <p>sweet & sour soup chopped vegetable with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/tom-kha-gai.jpg' %}" alt="Tom Kha Gai Soup" height="250">
+                            </div>
+                            <p class="product-price">€8.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Tom Kha Gai Soup</span>
+                                <p>thai style chicken soup with mushroom coconut milk with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/sorba-soup.jpg' %}" alt="Sorba Soup" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Sorba Soup</span>
+                                <p>chickpeas soup with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/tom-yum-soup.jpg' %}" alt="Tom Yum Soup" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Tom Yum Soup</span>
+                                <p>thai style soup with shrimps coconut milk with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/spinach-with-chicken-soup.jpg' %}" alt="Spinach With Chicken Soup" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Spinach With Chicken Soup</span>
+                                <p>chicken, spinach & chopped vegetable with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/everest-special-soup.jpeg' %}" alt="Hot and Sour Chicken Soup" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Soup</span>
+                                <p>Chopped mix meat & vegetable with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix soups">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/soups/mount-everest-soup.jpg' %}" alt="ount Everest Soup" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Mount Everest Soup</span>
+                                <p>Salmon with potato carrot coconut milk with naan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/vegetable-korma.jpg' %}" alt="Vegetable Korma" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Korma</span>
+                                <p>mixed vegetable & mushroom in cashew curry sauce with basmati plain rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/vegetable-kadai.jpg' %}" alt="Vegetable Kadai" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Kadai</span>
+                                <p>mix vegetable Indian sauce capsicum with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/paneer-kadai.webp' %}" alt="Paneer Kadai" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Paneer Kadai</span>
+                                <p>cheese capsicum onion Indian sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/matar-paneer.png' %}" alt="Matar Paneer" height="250">
+                            </div>
+                            <p class="product-price">€13.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Matar Paneer</span>
+                                <p>green peas potato cottage cheese in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/everest-paneer.webp' %}" alt="Everest Paneer" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Paneer</span>
+                                <p>jalpai cheese potato capsicum in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/sahi-paneer.jpg' %}" alt="Sahi Paneer" height="250">
+                            </div>
+                            <p class="product-price">€13.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Sahi Paneer</span>
+                                <p>cottage cheese in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/paneer-labtar.webp' %}" alt="Paneer Labtar" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Paneer Labtar</span>
+                                <p>cottage cheese in tibetian curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/chana-masala-with-rice.jpg' %}" alt="Chana Masala" height="250">
+                            </div>
+                            <p class="product-price">€13.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chana Masala</span>
+                                <p>chickpeas with cashew in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/chana-palak.webp' %}" alt="Chana Palak" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chana Palak</span>
+                                <p>chickpeas & spinach cashew in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/dal-makhani.webp' %}" alt="Dal Makhani" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Dal Makhani</span>
+                                <p>mix beans cashew curry in curr with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/everest-special-dal.jpg' %}" alt="Everest Special Dal" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Dal</span>
+                                <p>mix dal & chicken cashew in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/vendi-masala.jpg' %}" alt="Vendi Masala" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Vendi Masala</span>
+                                <p>lady finger, onion in curry with rice/plain nan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/rajma-masala.jpg' %}" alt="Rajma Masala" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Rajma Masala</span>
+                                <p>red beans in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/tofu-masala.jpg' %}" alt="Tofu Masala" height="250">
+                            </div>
+                            <p class="product-price">€13.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Tofu Masala</span>
+                                <p>tofu in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix veg-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/veg-dishes/everest-special-tofu.webp' %}" alt="Everest Special Tofu" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Tofu</span>
+                                <p>tofu, spinach tibetian curry coconut milk with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/sweet-and-sour-chicken.jpg' %}" alt="Sweet and Sour Chicken" height="250">
+                            </div>
+                            <p class="product-price">€9.90</p>
+                            <div class="product-details">
+                                <span class="product-name">Sweet and Sour Chicken</span>
+                                <p>crispy chicken, vegetable with sweet & sour sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/garlic-chicken.jpg' %}" alt="Garlic Chicken" height="250">
+                            </div>
+                            <p class="product-price">€10.90</p>
+                            <div class="product-details">
+                                <span class="product-name">Garlic Chicken</span>
+                                <p>crispy chicken, vegetable with spicy garlic sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/oyster-chicken.jpg' %}" alt="Oyster Chicken" height="250">
+                            </div>
+                            <p class="product-price">€10.30</p>
+                            <div class="product-details">
+                                <span class="product-name">Oyster Chicken</span>
+                                <p>crispy chicken, vegetable with oyster sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/crispy-chicken.webp' %}" alt="Crispy Chicken" height="250">
+                            </div>
+                            <p class="product-price">€11.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Chicken</span>
+                                <p>crispy chicken, onion, pro with spice soy sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/beijing-chicken.jpg' %}" alt="Beijing Chicken" height="250">
+                            </div>
+                            <p class="product-price">€10.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Beijing Chicken</span>
+                                <p>crispy roasted chicken, vegetable and Beijing sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/mango-chicken.jpeg' %}" alt="Mango Chicken" height="250">
+                            </div>
+                            <p class="product-price">€10.30</p>
+                            <div class="product-details">
+                                <span class="product-name">Mango Chicken</span>
+                                <p>crispy roasted chicken fillet, vegetables with mango sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/shanghai-style-chicken.jpg' %}" alt="Shanghai Style Chicken" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Shanghai Style Chicken</span>
+                                <p>roasted chicken, mushroom, nuts and vegetable with oyster sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/chicken-korma.webp' %}" alt="Chicken/Lamb Korma" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Korma</span>
+                                <p>tandoori roasted chicken, nuts, dry plums, creamy sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/butter-chicken.jpg' %}" alt="Butter Chicken" height="250">
+                            </div>
+                            <p class="product-price">€14.70</p>
+                            <div class="product-details">
+                                <span class="product-name">Butter Chicken</span>
+                                <p>tandoori roasted chicken coconut powder in curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/pahadi-chicken.jpg' %}" alt="Pahadi Chicken" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Pahadi Chicken</span>
+                                <p>tandoori roasted chicken, spinach in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/chicken-masala.webp' %}" alt="Chicken Masala" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Masala</span>
+                                <p>tandoori roasted chicken, egg in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/chicken-kadai.jpg' %}" alt="Chicken Kadai" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Kadai</span>
+                                <p>tandoori roasted chicken, onion, capsicum in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/chicken-labtar.jpg' %}" alt="Chicken Labtar" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Labtar</span>
+                                <p>tandoori roasted chicken in tibetian sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/chicken-tikka-masala.jpg' %}" alt="Chicken Tikka Masala" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Tikka Masala</span>
+                                <p>tandoori roasted chicken in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/everest-special-chicken.jpg' %}" alt="Everest Special Chicken" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Chicken</span>
+                                <p>Roasted chicken, onion, capsicum in tibetian sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/onion-pepper-chicken.jpg' %}" alt="Onion Pepper Chicken" height="250">
+                            </div>
+                            <p class="product-price">€13.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Onion Pepper Chicken</span>
+                                <p>crispy chicken, onion, capsicum with veg noodles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/dragon-chicken.jpg' %}" alt="Dragon Chicken" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Dragon Chicken</span>
+                                <p>crispy chicken & vegetables soy sauce with veg, noodle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/chicken-curry-with-bone.jpg' %}" alt="Chicken Curry with Bone" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Curry with Bone</span>
+                                <p>roasted chicken with bone in Nepali curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/egg-masala.webp' %}" alt="Egg Masala" height="250">
+                            </div>
+                            <p class="product-price">€12.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Egg Masala</span>
+                                <p>egg in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/thai-chicken-curry-green-eggplant.jpg' %}" alt="Thai Chicken Green Curry Eggplant" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Chicken Green Curry Eggplant</span>
+                                <p>roasted chicken, onion, capsicum, eggplant with coco milk thai sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/everest-special-thai-chicken-red-curry.jpg' %}" alt="Everest Special Thai Chicken Red Curry" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Thai Chicken Red Curry</span>
+                                <p>roasted chicken, onion, broccoli, pineapple, capsicum in thai red sauce coconut milk with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix chicken-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/chicken-dishes/thai-chicken-with-yellow-curry.webp' %}" alt="Thai Chicken with Yellow Curry" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Chicken with Yellow Curry</span>
+                                <p>roasted chicken, onion, broccoli, pineapple, capsicum in thai yellow sauce coconut milk with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/sweet-and-sour-pork.jpg' %}" alt="Sweet and Sour Pork" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Sweet and Sour Pork</span>
+                                <p>crispy pork with vegetable in sweet & sour sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/garlic-pork.jpg' %}" alt="Garlic Pork" height="250">
+                            </div>
+                            <p class="product-price">€8.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Garlic Pork</span>
+                                <p>crispy pork with vegetable in spicy garlic sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/oyster-pork.jpg' %}" alt="Oyster Pork" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Oyster Pork</span>
+                                <p>crispy pork with vegetable in oyster sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/honey-pork.jpg' %}" alt="Honey Pork" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Honey Pork</span>
+                                <p>crispy pork with vegetables in honey sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/beijing-pork.jpg' %}" alt="Beijing Pork" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Beijing Pork</span>
+                                <p>crispy pork with vegetables in Beijing chilly sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/thai-pork-with-red-curry.jpg' %}" alt="Thai Pork with Red Curry" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Pork with Red Curry</span>
+                                <p>roasted pork onion, broccoli, pineapple, capsicum in thai red sauce, coconut milk with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/thai-pork-with-green-curry-eggplant.jpg' %}" alt="Thai Pork with Green Curry Eggplant" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Pork with Green Curry Eggplant</span>
+                                <p>roasted pork onion, capsicum, eggplant with coco milk, thai green sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/everest-special-pork-masala.jpg' %}" alt="Everest Special Pork Masala" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Pork Masala</span>
+                                <p>roasted pork in nepali curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix pork-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/pork-dishes/everest-pork-with-champagne.webp' %}" alt="Everest Pork with Champion" height="250">
+                            </div>
+                            <p class="product-price">€10.30</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Pork with Champagne</span>
+                                <p>grilled champagne and pork in soy sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/garlic-lamb.jpg' %}" alt="Garlic Lamb" height="250">
+                            </div>
+                            <p class="product-price">€13.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Garlic Lamb</span>
+                                <p>boiled lamb with green onion in spicy garlic sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/ginger-lamb.jpg' %}" alt="Ginger Lamb" height="250">
+                            </div>
+                            <p class="product-price">€13.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Ginger Lamb</span>
+                                <p>boiled lamb with green onion in ginter tomato sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/crispy-chilly-lamb.jpg' %}" alt="Crispy Chilly Lamb" height="250">
+                            </div>
+                            <p class="product-price">€13.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Chilly Lamb</span>
+                                <p>crispy lamb with onion capsicum in hot sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/pahadi-lamb.jpg' %}" alt="Pahadi Lamb" height="250">
+                            </div>
+                            <p class="product-price">€15.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Pahadi Lamb</span>
+                                <p>cooked lamb spinach in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/lamb-curry-with-bone.jpg' %}" alt="Lamb Curry with Bone" height="250">
+                            </div>
+                            <p class="product-price">€13.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Lamb Curry with Bone</span>
+                                <p>roasted lamb with bone in Nepali curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/lamb-masala.jpg' %}" alt="Lamb Masala/Lamb Peanut" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Lamb Masala/Lamb Peanut</span>
+                                <p>cooked lamb in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/lamb-dishes/everest-special-lamb-with-rogan.jpg' %}" alt="Everest Special Lamb with Rogan" height="250">
+                            </div>
+                            <p class="product-price">€15.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Lamb with Rogan</span>
+                                <p>cooked lanb in tibetian sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix duck-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/duck-dishes/beijing-duck.jpg' %}" alt="Beijing Duck" height="250">
+                            </div>
+                            <p class="product-price">€13.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Beijing Duck</span>
+                                <p>crispy duck with vegetables in Peking sweet & sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix duck-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/duck-dishes/sangahai-style-duck.jpg' %}" alt="Sangahai Style Duck" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Sangahai Style Duck</span>
+                                <p>roasted duck with mushroom, nuts & vegetables in tomato sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix duck-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/duck-dishes/everest-special- duck.jpg' %}" alt="Everest Special Duck" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Duck</span>
+                                <p>crispy duck with dry plums in red wine sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix duck-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/duck-dishes/duck-roast-with-garlic.webp' %}" alt="Duck Roast with Garlic" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Duck Roast with Garlic</span>
+                                <p>crispy duck breast with sweet brown sauce</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- row end  -->
+            </div>
+            <!-- container end  -->
+        </div>
+        <!-- product inner end  -->
+    </div>
+</section>
+<!-- ========Product section end========= -->
+{% endblock maincontent%}

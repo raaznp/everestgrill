@@ -22,7 +22,7 @@ class GalleryView(ListView):
 
 class MenuView(ListView):
     model = Menu
-    template_name = "theme/menu.html"
+    template_name = "theme/menu1.html"
 
 class ReservationView(ListView):
     model = Reservation
