@@ -1,735 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Codebasket">
-    <meta name="keywords" content="Cafeu, food, restaurant, html, template, bootstrap, business, clean, creative, designer, responsive, minimal">
-    <meta name="type" content="Restaurant Template">
-    <meta name="title" content="Cafeu - Food Restaurant Bootstrap HTML Template">
-    <meta name="description" content="Codebasket food Bootstrap Website Template">
-    <title>Cafeu Html Template</title>
-    <!-- ==============favicon=============== -->
-    <link rel="shortcut icon" type="image/png" href="assets/img/log.png" />
-
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/font/icofont.min.css">
-    <link rel="stylesheet" href="assets/css/animation/aos.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/nouislider.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
-
-<body>
-    <!-- ======preloader==== -->
-    <div id="preloader">
-        <div id="container" class="container-preloader">
-            <div class="animation-preloader">
-                <div class="spinner"></div>
+{% extends 'theme/base2.html' %}
+{% load static %}
+{% block title %}Menu{% endblock title %}
+{% block breadcrumbs %}
+<!-- ========Breadcrumbs section========= -->
+<div class="page-banner" data-background="{% static 'assets/img/page-ban-bg.webp' %}">
+    <!-- container  -->
+    <div class="container">
+        <!-- row  -->
+        <div class="row">
+            <div class="page-ban-content">
+                <h1 class="page-head" data-aos="fade-up" data-aos-duration="1000">About Us</h1>
+                <div class="breadcrumb-list" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="{% url 'home' %}" class="page-route-link">Home</a>
+                    <span class="devider">/</span>
+                    <span>About Us</span>
+                </div>
             </div>
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
         </div>
+        <!-- row end  -->
     </div>
-    <!-- ======preloader==== -->
-    <!-- ====main wrapper == -->
-    <div>
-        <!-- header  -->
-        <header>
-            <div class="header header-default">
-                <!-- container  -->
-                <div class="container">
-                    <!-- header inner -->
-                    <div class="header-inner">
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="Logo not found" class="logo-img"></a>
+    <!-- container end -->
+</div>
+<!-- ========End Breadcrumbs section========= -->
+{% endblock breadcrumbs %}
+{% block maincontent %}
+<!-- ======feature===== -->
+<div class="feature cpy-8">
+    <!-- container  -->
+    <div class="container">
+        <!-- row  -->
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6 mb-4 feature-card-container">
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="feature-icon-sec">
+                        <div class="feature-box">
+                            <img src="{% static 'assets/img/icon/1.png' %}" alt="Authentic Indian Cuisine">
                         </div>
-                        <div class="header-right">
-                            <div class="header-menu d-none d-lg-block">
-                                <nav class="cf-header-menu" id="header-menu">
-                                    <ul>
-                                        <li class="has-submenu"><a href="index.html">Home</a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Home 1</a></li>
-                                                 <li><a href="home-2.html">Home 2</a></li>
-                                                <li><a href="home-3.html">Home 3</a></li>
-                                                <li><a href="home-4.html">Home 4</a></li>
-                                                <li><a href="home-5.html">Home 5</a></li>
-                                                <li><a href="home-6.html">Home 6</a></li>
-                                                <li><a href="home-7.html">Home 7</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu"><a href="about.html">About Us</a>
-                                            <ul class="submenu">
-                                                <li><a href="about.html">About 1</a></li>
-                                                 <li><a href="about-2.html">About 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu"><a href="menu.html">Menu</a>
-                                            <ul class="submenu">
-                                                <li><a href="menu.html">Menu 1</a></li>
-                                                 <li><a href="menu-2.html">Menu 2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu"><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="singel-post.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu"><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="faq.html">FAQs</a></li>       
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="service.html">Service</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="team-view.html">Team Details</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-details.html">Shop Details</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="Reservation.html">Reservation</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-submenu"><a href="menu.html">Contact</a>
-                                            <ul class="submenu">
-                                                <li><a href="contact.html">Contact 1</a></li>
-                                                 <li><a href="contact-2.html">Contact 2</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="header-right-search-phone d-none d-lg-block ml-35">
-                                    <a href="#" class="header-search" id="search"><span
-                                        class="icofont-search-1"></span></a>
-                                    <a href="tel:+880123456789" class="header-phone"><img src="assets/img/icon/call.png" alt="Image not found" 
-                                        class="contact-icon"> +880 123 456 789</a>
-                                    
-                            </div>
-                            <div class="d-lg-none dr-navbar-mobile-sign side-toggle">
-                                <div class="dr-navbar-sign menu-tab">
-                                    <span class="dr-line-1"></span>
-                                    <span class="dr-line-2"></span>
-                                    <span class="dr-line-3"></span>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                    <!-- header inner end  -->
-                    <div class="search-form-wrapper">
-                        <form action="#">
-                            <div class="p-1 bg-light search-form shadow-sm mt-3" id="searchForm">
-                                <div class="input-group">
-                                    <input type="search" placeholder="What're you searching for?" class="form-control search-input border-0 bg-light">
-                                </div>
-                            </div>
-                        </form>
+                    <div class="feature-details" data-background="{% static 'assets/img/icon/f-bg.png' %}">
+                        <h3 class="feature-name"><a href="">Authentic Indian Cuisine</a></h3>
+                        <p class="feature-des">Indulge in the rich flavors of India with our diverse menu of traditional and contemporary dishes, crafted with authentic spices and ingredients.</p>
                     </div>
                 </div>
-                <!-- container end  -->
             </div>
-            <!-- nav end -->
-        </header>
-        <!-- header end  -->
-
-        <!-- dr-sidebar-information-area-start -->
-        <div class="dr-sidebar-info side-info">
-            <div class="dr-sidebar-logo-wrapper mb-25">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-8">
-                        <div class="dr-sidebar-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo-img"></a>
+            <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6 mb-4 feature-card-container">
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="feature-icon-sec">
+                        <div class="feature-box">
+                            <img src="{% static 'assets/img/icon/2.png' %}" alt="Vegan & Gluten-Free Options">
                         </div>
                     </div>
-                    <div class="col-xl-6 col-4">
-                        <div class="dr-sidebar-close-wrapper text-end">
-                            <button class="dr-sidebar-close side-info-close"><i class="icofont-close-line"></i></button>
-                        </div>
+                    <div class="feature-details" data-background="{% static 'assets/img/icon/f-bg.png' %}">
+                        <h3 class="feature-name"><a href="service-details.html">Vegan & Gluten-Free Options</a></h3>
+                        <p class="feature-des">Savor our wide selection of tasty vegan and gluten-free dishes, designed to cater to various dietary preferences without compromising flavor.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="dr-sidebar-menu-wrapper fix">
-                <div class="cf-header-menu"></div>
-            </div>
-
-            <div class="dr-sidebar-btn-wrap mt-40">
-                <a href="#"><span class="icofont-shopping-cart"><span class="cart-count">4</span></span></a>
-                <a href="#"><i class="icofont-ui-user"></i></a>
-            </div>
-
-            <div class="dr-sidebar-contact-wrapper mt-40">
-                <div class="dr-sidebar-contact mb-40">
-                    <h4 class="dr-sidebar-contact-title">Contact Info</h4>
-                    <span class="sidebar-address"><i class="icofont-google-map"></i><span>4929 Thorn Street Crow heart, WY 82512</span> </span>
-                    <a href="tel:+1(251)410-1010"><i class="icofont-phone"></i><span>+1 (251) 410-1010</span></a>
-                    <a href="mailto:example@gmail.com" class="theme-3"><i class="icofont-envelope-open"></i><span><span>example@gmail.com</span></span></a>   
+            <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6 mb-4 feature-card-container">
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="feature-icon-sec">
+                        <div class="feature-box">
+                            <img src="{% static 'assets/img/icon/3.png' %}" alt="Customized Meal Plans">
+                        </div>
+                    </div>
+                    <div class="feature-details" data-background="{% static 'assets/img/icon/f-bg.png' %}">
+                        <h3 class="feature-name"><a href="">Customized Meal Plans</a></h3>
+                        <p class="feature-des">We offer personalized meal plans for health-conscious diners, tailored to your dietary needs and preferences for nutritious and delicious dining.</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="dr-sidebar-social mt-40 mb-30">
-                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="youtube"><i class="fab fa-dribbble"></i></a>
+            <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6 mb-4 feature-card-container">
+                <div class="feature-card" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="feature-icon-sec">
+                        <div class="feature-box">
+                            <img src="{% static 'assets/img/icon/4.png' %}" alt="Take-Away Service">
+                        </div>
+                    </div>
+                    <div class="feature-details" data-background="{% static 'assets/img/icon/f-bg.png' %}">
+                        <h3 class="feature-name"><a href="">Take-Away Service</a></h3>
+                        <p class="feature-des">Enjoy the flavors of Everest Grill & Resto on the go with our convenient take-away service. Perfect for busy days, our take-away option lets you savor your favorite dishes anywhere.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="offcanvas-overlay"></div>
-        <!-- dr-sidebar-information-area-end -->
+        <!-- row end  -->
+    </div>
+    <!-- container end  -->
+</div>
+<!-- ======feature end===== -->
 
+<!-- =========About====== -->
+<section>
+    <div class="about about-1 cpy-8">
+        <!-- container  -->
+        <div class="container">
+            <div class="section-head text-center " data-aos="fade-up" data-aos-duration="1000">
+                <span class="sm-title ">
+                    About Us
+                </span>
+                <h2 class="sec-title">
+                    Why We Are The Best
+                </h2>
+            </div>
+            <!-- row  -->
+            <div class="row mt-40">  
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="about-img">
+                        <img src="{% static 'assets/img/banner/about-banner.png' %}" alt="About Us">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="h-100 d-flex align-items-center pl-40">
+                        <div class="about-details">
+                            <p class="about-des mb-4">
+                                Welcome to Everest Grill & Restro in the heart of Tallinn! Our chefs, with over 20 years of international experience, bring authentic Asian, Thai, Indian, and Chinese flavors to every dish. From vibrant curries to savory stir-fries and special grilled Shaslik meats, our diverse menu has something for everyone.
+                                <br/> <br/>
+                                Join us for an exceptional dining experience in an inviting atmosphere. We look forward to serving you!
+                            <div class="service-list">
+                                <ul class="service-ul">
+                                    <li class="ab-service-li mb-4">
+                                        <div class="service-icon">
+                                            <img src="{% static 'assets/img/icon/2.png' %}" alt="">
+                                        </div>
+                                        <div class="service-name-des">
+                                            <h4 class="service-name mb-1">Skilled Chefs</h4>
+                                            <p class="service-des">
+                                                Exceptionally skilled chefs with over 20 years of international experience are at your service.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="ab-service-li mb-4">
+                                        <div class="service-icon">
+                                            <img src="{% static 'assets/img/icon/4.png' %}" alt="">
+                                        </div>
+                                        <div class="service-name-des">
+                                            <h4 class="service-name mb-1">Vegan Cuisine</h4>
+                                            <p class="service-des">
+                                                Delight in our exquisite vegan cuisine, crafted with fresh, locally-sourced ingredients for a wholesome dining experience.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="ab-service-li mb-4">
+                                        <div class="service-icon">
+                                            <img src="{% static 'assets/img/icon/6.png' %}" alt="">
+                                        </div>
+                                        <div class="service-name-des">
+                                            <h4 class="service-name mb-1">Vibrant Space</h4>
+                                            <p class="service-des">
+                                                Enjoy our vibrant space, where colorful ambiance and lively atmosphere create the perfect setting for memorable moments.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row end  -->
+        </div>
+        <!-- container end  -->
+    </div>
+</section>
+<!-- =========About end====== -->
 
-        <!-- =======================body wrapper========= -->
-        <div class="body-wrapper">
-            <!-- ===================page banner============ -->
-            <div class="page-banner" data-background="assets/img/page-ban-bg.png">
-                <!-- container  -->
-                <div class="container">
+<!-- ======check section======== -->
+<section>
+    <div class="availability mb-120" data-background="assets/img/subscribe-bg.png">
+        <!-- bg availa  -->
+        <div class="bg-availa">
+            <!-- container  -->
+            <div class="container">
+                <!-- position relative  -->
+                <div class="position-relative">
                     <!-- row  -->
                     <div class="row">
-                        <div class="page-ban-content">
-                            <h1 class="page-head" data-aos="fade-up" data-aos-duration="1000">About Us</h1>
-                            <div class="breadcrumb-list" data-aos="fade-up" data-aos-duration="1500">
-                                <a href="index.html" class="page-route-link">Home</a>
-                                <span class="devider">/</span>
-                                <span>About</span>
+                        <div class="col-md-6 col-xl-8 col-lg-7 my-2" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="available-content">
+                                <a href="#" class="video-btn play-video"><span
+                                        class="icofont-ui-play"></span></a>
+                                <h2 class="available-head">
+                                    We Have Excellent Of Quality <br> Japanese Food
+                                </h2>
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do eiusmod tempor incididunt ut labore et dolore</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-lg-5 my-2" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="avail-inner">
+                                <div class="available-note">
+                                    <div class="note-head">
+                                        <span class="sm-title mb-0">Opening Times</span>
+                                        <h2 class="note-title mb-0">Check Availability</h2>
+                                    </div>
+                                    <ul class="note-ul">
+                                        <li class="note-li">
+                                            <p class="day">Sunday to Tuesday</p>
+                                            <p class="time">09:00 - 06:00</p>
+                                        </li>
+                                        <li class="note-li">
+                                            <p class="day">Friday to Sunday</p>
+                                            <p class="time">06:00 - 09:00</p>
+                                        </li>
+                                        <li class="note-li">
+                                            <p class="day">Sunday to Tuesday</p>
+                                            <p class="time">09:00 - 06:00</p>
+                                        </li>
+                                        <li class="note-li">
+                                            <p class="day">Monday to Friday</p>
+                                            <p class="time">06:00 - 09:00</p>
+                                        </li>
+                                        <li class="note-li">
+                                            <p class="day">Monday to Saturday</p>
+                                            <p class="time">06:00 - 09:00</p>
+                                        </li>
+                                    </ul>
 
+                                    <div class="note-footer">
+                                        <h4 class="note-footer-text">Call Us Now</h4>
+                                        <a class="note-footer-text" href="tel:+993240-765230">+993240-765230</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- row end  -->
                 </div>
-                <!-- container end -->
+                <!-- position relative end  -->
             </div>
-            <!-- ===================page banner end============ -->
-            <!-- =========About====== -->
-            <section>
-                <div class="about about-1 cpy-8">
-                    <!-- container  -->
-                    <div class="container">
-                        <!-- row  -->
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
-                                <div class="about-img">
-                                    <img src="assets/img/image/exparience.png" alt="">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000">
-                                <div class="h-100 d-flex align-items-center pl-40">
-                                    <div class="about-details">
-                                        <span class="sm-title">About Us</span>
-                                        <h2 class="about-title">Why We Are The Best</h2>
-                                        <p class="about-des mb-4">
-                                            Quis autem vel eum iure reprehenderit qui in evoluptate velit esse qua nihil
-                                            <br> molestiae consequatur, vel illum qui dolorem eum fugiat quvoluptas nulla <br> pariatureaque ipsa quae ab illo inventore veritatis et quasi architecto <br> beatae vitae dicta sunt explicabo.
-                                        </p>
-                                        <div class="service-list">
-                                            <ul class="service-ul">
-                                                <li class="ab-service-li mb-4">
-                                                    <div class="service-icon">
-                                                        <img src="assets/img/icon/5.png" alt="">
-                                                    </div>
-                                                    <div class="service-name-des">
-                                                        <h4 class="service-name mb-1">Buffet Service</h4>
-                                                        <p class="service-des">
-                                                            Qariatureaque ipsa quae a illo inventore <br> veritatis et quasi architecto
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                                <li class="ab-service-li mb-4">
-                                                    <div class="service-icon">
-                                                        <img src="assets/img/icon/6.png" alt="">
-                                                    </div>
-                                                    <div class="service-name-des">
-                                                        <h4 class="service-name mb-1">Online Booking</h4>
-                                                        <p class="service-des">
-                                                            Qariatureaque ipsa quae a illo inventore <br> veritatis et quasi architecto
-                                                        </p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="service-button-wrap mt-40">
-                                            <a href="about.html" class="custom-btn">About Us</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- row end  -->
-                    </div>
-                    <!-- container end  -->
-                </div>
-            </section>
-            <!-- =========About end====== -->
-            <!-- ==============================================
-                            Describe section
-            ============================================== -->
-            <section>
-                <!-- describe  -->
-                <div class="describe describe-2">
-                    <!-- container  -->
-                    <div class="container">
-                        <!-- row  -->
-                        <div class="row">
-                            <div class="describe-content " data-aos="fade-up" data-aos-duration="1000">
-                                <div class="describe-content">
-                                    <span class="describe-sm-title mb-0">Call To Action</span>
-                                    <h2 class="call-sec-title mb-0">Hire Your Next Candidate On Discate</h2>
-                                    <p class="call-number mb-0">
-                                        Call Us: +99 698 569 565
-                                    </p>
-                                    <a href="menu.html" class="custom-btn">Discover More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- row end  -->
-                    </div>
-                    <!-- container end  -->
-                </div>
-                <!-- describe end  -->
-            </section>
-            <!-- ==============================================
-                            Describe section end
-            ============================================== -->
-
-            <!-- ===========our team========= -->
-            <section>
-                <!-- team  -->
-                <div class="team cmb-7">
-                    <!-- container  -->
-                    <div class="container">
-                        <div class="section-head text-center " data-aos="fade-up" data-aos-duration="1000">
-                            <span class="sm-title ">Our Team</span>
-                            <h2 class="sec-title">
-                                Meet Our Team
-                            </h2>
-                        </div>
-                        <div class="row mt-40">
-                            <div class="col-md-4 col-sm-6 mb-4">
-                                <div class="team-card" data-aos="fade-up" data-aos-duration="1000">
-                                    <div class="member-img">
-                                        <a href="team-view.html"><img src="assets/img/team/1.png" alt="Image not found"></a>
-                                    </div>
-                                    <div class="member-details">
-                                        <a href="team-view.html" class="member-name">Jimmey Aenderson</a>
-                                        <p class="member-title">
-                                            Chief Executive
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 mb-4">
-                                <div class="team-card" data-aos="fade-up" data-aos-duration="1500">
-                                    <div class="member-img">
-                                        <a href="team-view.html"><img src="assets/img/team/2.png" alt="Image not found"></a>
-                                    </div>
-                                    <div class="member-details">
-                                        <a href="team-view.html" class="member-name">Mike by Dooley</a>
-                                        <p class="member-title">
-                                            Executive
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 mb-4">
-                                <div class="team-card" data-aos="fade-up" data-aos-duration="2000">
-                                    <div class="member-img">
-                                        <a href="team-view.html"><img src="assets/img/team/3.png" alt="Image not found"></a>
-                                    </div>
-                                    <div class="member-details">
-                                        <a href="team-view.html" class="member-name">Alextina Jimiey</a>
-                                        <p class="member-title">
-                                            Food Lovers
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- container end  -->
-                </div>
-                <!-- team end  -->
-            </section>
-            <!-- ===========our team end========= -->
-
-            <!-- ======check section======== -->
-            <section>
-                <div class="availability mb-120" data-background="assets/img/subscribe-bg.png">
-                    <!-- bg availa  -->
-                    <div class="bg-availa">
-                        <!-- container  -->
-                        <div class="container">
-                            <!-- position relative  -->
-                            <div class="position-relative">
-                                <!-- row  -->
-                                <div class="row">
-                                    <div class="col-md-6 col-xl-8 col-lg-7 my-2" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="available-content">
-                                            <a href="#" class="video-btn play-video"><span
-                                                    class="icofont-ui-play"></span></a>
-                                            <h2 class="available-head">
-                                                We Have Excellent Of Quality <br> Japanese Food
-                                            </h2>
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br> do eiusmod tempor incididunt ut labore et dolore</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-xl-4 col-lg-5 my-2" data-aos="fade-left" data-aos-duration="1000">
-                                        <div class="avail-inner">
-                                            <div class="available-note">
-                                                <div class="note-head">
-                                                    <span class="sm-title mb-0">Opening Times</span>
-                                                    <h2 class="note-title mb-0">Check Availability</h2>
-                                                </div>
-                                                <ul class="note-ul">
-                                                    <li class="note-li">
-                                                        <p class="day">Sunday to Tuesday</p>
-                                                        <p class="time">09:00 - 06:00</p>
-                                                    </li>
-                                                    <li class="note-li">
-                                                        <p class="day">Friday to Sunday</p>
-                                                        <p class="time">06:00 - 09:00</p>
-                                                    </li>
-                                                    <li class="note-li">
-                                                        <p class="day">Sunday to Tuesday</p>
-                                                        <p class="time">09:00 - 06:00</p>
-                                                    </li>
-                                                    <li class="note-li">
-                                                        <p class="day">Monday to Friday</p>
-                                                        <p class="time">06:00 - 09:00</p>
-                                                    </li>
-                                                    <li class="note-li">
-                                                        <p class="day">Monday to Saturday</p>
-                                                        <p class="time">06:00 - 09:00</p>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="note-footer">
-                                                    <h4 class="note-footer-text">Call Us Now</h4>
-                                                    <a class="note-footer-text" href="tel:+993240-765230">+993240-765230</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- row end  -->
-                            </div>
-                            <!-- position relative end  -->
-                        </div>
-                        <!-- container end  -->
-                    </div>
-                    <!-- bg availa end  -->
-                </div>
-            </section>
-            <!-- ======check section end======== -->
-
-
-            <!-- ==================Customers========== -->
-            <section>
-                <!-- customer  -->
-                <div class="customer customer-1 cpy-8">
-                    <!-- container  -->
-                    <div class="container">
-                        <!-- section head  -->
-                        <div class="section-head text-center " data-aos="fade-up" data-aos-duration="1000">
-                            <span class="sm-title">Happy Customers</span>
-                            <h2 class="sec-title">Our Guestbook</h2>
-                        </div>
-                        <!-- section head end  -->
-                        <div class="d-flex justify-content-center">
-                            <div class="col-12 col-sm-12 col-md-10" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="swiper customer-review">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide review-item">
-                                            <div class="row">
-                                                <div class="col-md-7 my-2">
-                                                    <div class="review">
-                                                        <img src="assets/img/icon/7.png" alt="" class="quotation">
-                                                        <h2 class="review-title mb-0">James Smith list <br> Specifications 2022</h2>
-                                                        <p>Organizations throughout the World to manage heir IT <br> with our unique approach to technology agement and <br> consultancy solutions. Provide users with priate view <br> and access permissions
-                                                        </p>
-
-                                                        <h3 class="customer-name mb-0">Reson Roy <span>- Tool Customar</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-5 my-2">
-                                                    <div class="customer-img">
-                                                        <img src="assets/img/customer/1.png" alt="Image Not found">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide review-item">
-                                            <div class="row">
-                                                <div class="col-md-7 my-2">
-                                                    <div class="review">
-                                                        <img src="assets/img/icon/7.png" alt="" class="quotation">
-                                                        <h2 class="review-title mb-0">James Smith list <br> Specifications 2022</h2>
-                                                        <p>Organizations throughout the World to manage heir IT <br> with our unique approach to technology agement and <br> consultancy solutions. Provide users with priate view <br> and access permissions
-                                                        </p>
-
-                                                        <h3 class="customer-name mb-0">Reson Roy <span>- Tool Customar</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-5 my-2">
-                                                    <div class="customer-img">
-                                                        <img src="assets/img/customer/11.png" alt="Image Not found">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="swiper-slide review-item">
-                                            <div class="row">
-                                                <div class="col-md-7 my-2">
-                                                    <div class="review">
-                                                        <img src="assets/img/icon/7.png" alt="" class="quotation">
-                                                        <h2 class="review-title mb-0">James Smith list <br> Specifications 2022</h2>
-                                                        <p>Organizations throughout the World to manage heir IT <br> with our unique approach to technology agement and <br> consultancy solutions. Provide users with priate view <br> and access permissions
-                                                        </p>
-
-                                                        <h3 class="customer-name mb-0">Reson Roy <span>- Tool Customar</span>
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-5 my-2">
-                                                    <div class="customer-img">
-                                                        <img src="assets/img/customer/12.png" alt="Image Not found">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="review-pagination"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- container end  -->
-                </div>
-                <!-- custome end  -->
-            </section>
-            <!-- ==================Customers end========== -->
-
-            <!-- ========================Footer ============= -->
-            <footer>
-                <!-- footer section  -->
-                <div class="footer-section footer-1" data-background="assets/img/footer-bg.png">
-                    <!-- container  -->
-                    <div class="container">
-                        <!-- row  -->
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6 my-2 smpadright40" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="footer-content-wrapper">
-                                    <div class="footer-logo mb-4">
-                                        <img src="assets/img/logo/logo-white.png" alt="">
-                                    </div>
-                                    <p>Lorem ipsum dolor sit consectetur, ame adipiscing elit, sed do</p>
-                                    <ul class="address">
-                                        <li><span class="icofont-location-pin"></span>
-                                            <p class="address-info">4920 Trails End Road Ft United States, FL 33311</p>
-                                        </li>
-
-                                        <li><span class="icofont-email"></span>
-                                            <div class="address-inner">
-                                                <p class="address-info"><a href="mailto:nfo@example.com">nfo@example.com</a></p>
-                                                <p class="address-info"><a href="mailto:test@example.com">test@example.com</a></p>
-                                            </div>
-                                        </li>
-
-                                        <li><span class="icofont-ui-call"> </span>
-                                            <div class="address-inner">
-                                                <p class="address-info"><a href="tel:+123456679123">+123 456 679 123</a></p>
-                                                <p class="address-info"><a href="tel:+123456789">+123 456 789</a></p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-sm-6 my-2 padleft40" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="footer-content-wrapper">
-                                    <div class="footer-sec-head mb-4">
-                                        <h4 class="footer-widget-title">Quick links</h4>
-                                    </div>
-                                    <ul class="qu-link">
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Pizza</a></li>
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Burger</a></li>
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Cake</a></li>
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Chocolate</a></li>
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Ice Cream</a></li>
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Pizza</a></li>
-                                        <li class="foot-list"><a href="menu.html" class="footer-link">Burger</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-sm-6 my-2 padright40" data-aos="fade-up" data-aos-duration="2000">
-                                <div class="footer-content-wrapper">
-                                    <div class="footer-sec-head mb-4">
-                                        <h4 class="footer-widget-title">Instagram</h4>
-                                    </div>
-                                    <ul class="insta-feed">
-                                        <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="assets/img/instagram/1.png" alt=""></a>
-                                        </li>
-                                        <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="assets/img/instagram/2.png" alt=""></a>
-                                        </li>
-                                        <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="assets/img/instagram/3.png" alt=""></a>
-                                        </li>
-                                        <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="assets/img/instagram/4.png" alt=""></a>
-                                        </li>
-                                        <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="assets/img/instagram/5.png" alt=""></a>
-                                        </li>
-                                        <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="assets/img/instagram/6.png" alt=""></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3 col-md-6 col-sm-6 my-2" data-aos="fade-up" data-aos-duration="2500">
-                                <div class="footer-content-wrapper">
-                                    <div class="footer-sec-head mb-4">
-                                        <h4 class="footer-widget-title">Subscribe</h4>
-                                    </div>
-
-                                    <p class="subscribe-des">
-                                        Lorem ipsum dolor si consectetur adipisicing elit, sed eiusmotempor incididunt ut labore et
-                                    </p>
-
-                                    <form class="hero-form" action="#">
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control subscribtion-input" placeholder="Enter Your Email">
-                                            <button type="submit" class="custom-btn"><span
-                                                    class="icofont-location-arrow"></span></button>
-                                        </div>
-                                    </form>
-                                    <ul class="social-ul">
-                                        <li class="social-list">
-                                            <a href="#" class="social-link"><span class="icofont-facebook"></span></a>
-                                        </li>
-
-                                        <li class="social-list">
-                                            <a href="#" class="social-link"><span class="icofont-twitter"></span></a>
-                                        </li>
-
-                                        <li class="social-list">
-                                            <a href="#" class="social-link"><span class="icofont-skype"></span></a>
-                                        </li>
-
-                                        <li class="social-list">
-                                            <a href="#" class="social-link"><span class="icofont-instagram"></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- row end  -->
-                    </div>
-                    <!-- container end  -->
-                    <!-- last footer  -->
-                    <div class="last-footer">
-                        <div class="container">
-                            <div class="row">
-                                <div class="text-center">
-                                    <p class="copyright-text">© Copyright Cafeu. 2022 All Right Reserved</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- last footer end  -->
-                </div>
-                <!-- footer section end  -->
-            </footer>
-            <!-- ========================Footer end============= -->
+            <!-- container end  -->
         </div>
-        <!-- =======================body wrapper end========= -->
-
+        <!-- bg availa end  -->
     </div>
-    <!-- ====main wrapper end == -->
+</section>
+<!-- ======check section end======== -->
 
-    <!-- ======script======= -->
-    <!-- =====jquery===== -->
-    <script src="assets/js/jquery/jquery.min.js"></script>
-    <!-- =====bootstrap===== -->
-    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- ======slider===== -->
-    <script src="assets/js/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ===============animation========= -->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <script src="assets/js/animation/aos.js"></script>
-    <script src="assets/js/meanmenu.js"></script>
-    <!-- ======mixitup======= -->
-    <script src="assets/js/mixitup/mixitup.min.js"></script>
-    <script src="assets/js/nouislider.js"></script>
-    <!-- ======custom script====== -->
-    <script src="assets/js/app.js"></script>
-    <!-- ========gsap animation effect========= -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-   <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    let revealContainers = document.querySelectorAll(".about-img");
-
-    revealContainers.forEach((container) => {
-    let image = container.querySelector("img");
-    let tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: container,
-      toggleActions: "restart none none reset"
-    }
-  });
-
-    tl.set(container, { autoAlpha: 1 });
-    tl.from(container, 1.5, {
-    xPercent: -100,
-    ease: Power2.out
-  });
-    tl.from(image, 1.5, {
-    xPercent: 100,
-    scale: 1.3,
-    delay: -1.5,
-    ease: Power2.out
-  });
-});
-</script>
-
-<!-- Preloader -->
-<script src="assets/js/jquery/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-    setTimeout(function() {
-    $('#container').addClass('loaded');
-    if ($('#container').hasClass('loaded')) {
-
-    $('#preloader').delay(2000).queue(function() {
-     $(this).remove();
-    });}
-    }, 2000);});
-</script>
-
-</body>
-
-</html>
+{% endblock maincontent %}

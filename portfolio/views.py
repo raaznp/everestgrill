@@ -10,7 +10,7 @@ class IndexView(TemplateView):
     
 class AboutUsView(ListView):
     model = AboutUs
-    template_name = "theme/about_us.html"
+    template_name = "theme/about.html"
 
 class ContactView(ListView):
     model = Contact
