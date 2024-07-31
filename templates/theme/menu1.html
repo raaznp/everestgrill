@@ -81,6 +81,30 @@
                                         <img src="{% static 'assets/img/menu-icon/6.webp' %}" alt="" class="cat-icon">
                                         <span class="cat-name">Duck Dishes</span>
                                     </li>
+                                    <li class="cat-menu-li" data-filter=".fish-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Fish Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".shashlik">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Shashlik</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".beef-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Beef Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".children-dishes">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Children's Dishes</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".everest-specials">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Everest Special</span>
+                                    </li>
+                                    <li class="cat-menu-li" data-filter=".desserts">
+                                        <img src="{% static 'assets/img/menu-icon/4.webp' %}" alt="" class="cat-icon">
+                                        <span class="cat-name">Desserts</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -1337,7 +1361,7 @@
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix lamb-dishes">
                         <div class="product-card">
                             <div class="product-img">
-                                <img src="{% static 'assets/menu/lamb-dishes/everest-special-lamb-with-rogan.jpg' %}" alt="Everest Special Lamb with Rogan" height="250">
+                                <img src="{% static 'assets/menu/lamb-dishes/everest-special-lamb-with-rogan.webp' %}" alt="Everest Special Lamb with Rogan" height="250">
                             </div>
                             <p class="product-price">€15.50</p>
                             <div class="product-details">
@@ -1394,6 +1418,511 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/sweet-and-sour-fish.jpg' %}" alt="Sweet and Sour Fish" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Sweet and Sour Fish</span>
+                                <p>crispy white fish with pineapple and vegetable in chinese sweet and sour sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/grilled-salmon-with-vegetables.jpg' %}" alt="Grilled Salmon with Vegetables" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Grilled Salmon with Vegetables</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/fish-coconut-curry.jpg' %}" alt="Fish Coconut Curry/Salmon Red Curry" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Fish Coconut Curry/Salmon Red Curry</span>
+                                <p>crispy white fish with coconut and spices in curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/everest-special-fish-with-hot-garlic.jpg' %}" alt="Everest Special Fish with Hot Garlic" height="250">
+                            </div>
+                            <p class="product-price">€11.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Fish with Hot Garlic</span>
+                                <p>crispy white fish with onion, paprika and soy sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/fish-and-chips.jpg' %}" alt="Fish and Chips" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Fish and Chips</span>
+                                <p>crispy white fish with french fries and salad with sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/king-prawn-with-red-curry-sauce.jpg' %}" alt="King Prawn with Red Curry Sauce" height="250">
+                            </div>
+                            <p class="product-price">€16.00</p>
+                            <div class="product-details">
+                                <span class="product-name">King Prawn with Red Curry Sauce</span>
+                                <p>king prawn, paprika, onion, pineapple, coco milk, broccoli with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/king-prawn-with-green-curry-and-eggplant.jpg' %}" alt="King Prawn with Green Curry and Eggplant" height="250">
+                            </div>
+                            <p class="product-price">€16.50</p>
+                            <div class="product-details">
+                                <span class="product-name">King Prawn with Green Curry and Eggplant</span>
+                                <p>king prawn, paprika, onion, pineapple, coco milk, eggplant with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix fish-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/fish-dishes/salmon-masala-with-rice.webp' %}" alt="Salmon Masala" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Salmon Masala</span>
+                                <p>salmon, curry sauce with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix shashlik">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/shashlik/pork-shashlik.jpg' %}" alt="Pork Shashlik" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Pork Shashlik</span>
+                                <p>grilled pork with fresh salad, fried potatoes/frech fries/rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix shashlik">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/shashlik/chicken-shashlik.jpg' %}" alt="Chicken Shashlik" height="250">
+                            </div>
+                            <p class="product-price">€14.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Shashlik</span>
+                                <p>grilled chicken with fresh salad, fried potatoes/frech fries/rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix shashlik">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/shashlik/lamb-shashlik.jpg' %}" alt="Lamb Shashlik" height="250">
+                            </div>
+                            <p class="product-price">€18.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Lamb Shashlik</span>
+                                <p>grilled lamb with fresh salad, fried potatoes/frech fries/rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix shashlik">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/shashlik/tandoor-chicken-with-bone.webp' %}" alt="Tandoor Chicken with Bone" height="250">
+                            </div>
+                            <p class="product-price">€12.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Tandoor Chicken with Bone</span>
+                                <p>grilled bone chicken with fresh salad, fried potatoes/frech fries/rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix shashlik">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/shashlik/everest-special-shashlik-asorti.webp' %}" alt="Everest Special Shashlik Asorti" height="250">
+                            </div>
+                            <p class="product-price">€50.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Shashlik Asorti</span>
+                                <p>three different shashlik with salad, fried potatoes, french fries, rice, cheese naan and coke</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix beef-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/beef-dishes/beef-with-bamboo.jpg' %}" alt="Beef with Bamboo" height="250">
+                            </div>
+                            <p class="product-price">€11.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Beef with Bamboo</span>
+                                <p>beef, mushroom with garlic and ginger sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix beef-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/beef-dishes/crispy-beef.jpg' %}" alt="Crispy Beef" height="250">
+                            </div>
+                            <p class="product-price">€11.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Crispy Beef</span>
+                                <p>crispy beef with onion, capsicum, garlic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix beef-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/beef-dishes/thai-beef-green-curry.jpg' %}" alt="Thai Beef Green Curry" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Beef Green Curry</span>
+                                <p>thai beef with coconut milk mushroom bamboo shoot & lemon grass with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix beef-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/beef-dishes/thai-beef-red-curry.jpg' %}" alt="Thai Beef Red Curry" height="250">
+                            </div>
+                            <p class="product-price">€14.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Thai Beef Red Curry</span>
+                                <p>thai beef with pineapple, onion, broccoli & basil in thai red curry with rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix beef-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/beef-dishes/honey-beef.jpg' %}" alt="Honey Beef" height="250">
+                            </div>
+                            <p class="product-price">€11.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Honey Beef</span>
+                                <p>crispy beef in light honey sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix children-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/children-dishes/french-fries.jpg' %}" alt="French Fries" height="250">
+                            </div>
+                            <p class="product-price">€4.50</p>
+                            <div class="product-details">
+                                <span class="product-name">French Fries</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix children-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/children-dishes/creamy-chicken-noodles.jpg' %}" alt="Creamy Noodles with Chicken" height="250">
+                            </div>
+                            <p class="product-price">€6.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Creamy Noodles with Chicken</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix children-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/children-dishes/small-shashlik.jpg' %}" alt="Small Shashlik" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Small Shashlik</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix children-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/children-dishes/momo-fried.jpeg' %}" alt="Dumpling (Fried/Boiled)" height="250">
+                            </div>
+                            <p class="product-price">€5.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Dumpling (Fried/Boiled)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix children-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/children-dishes/hot-dog-with-french-fries.jpg' %}" alt="Hot Dog with French Fries" height="250">
+                            </div>
+                            <p class="product-price">€5.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Hot Dog with French Fries</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix children-dishes">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/children-dishes/potato-fries.jpg' %}" alt="Potato Fries" height="250">
+                            </div>
+                            <p class="product-price">€5.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Potato Fries</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/chicken-biryani.jpg' %}" alt="Chicken Biryani" height="250">
+                            </div>
+                            <p class="product-price">€8.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Biryani</span>
+                                <p>succulent chicken marinated in spices, slow-cooked with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/lamb-biryani.jpg' %}" alt="Lamb Biryani" height="250">
+                            </div>
+                            <p class="product-price">€10.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Lamb Biryani</span>
+                                <p>succulent lamb marinated in spices, slow-cooked with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/veg-biryani.jpg' %}" alt="Vegetable Biryani" height="250">
+                            </div>
+                            <p class="product-price">€7.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Biryani</span>
+                                <p>succulent vegetables marinated in spices, slow-cooked with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/paneer-biryani.jpg' %}" alt="Paneer Biryani" height="250">
+                            </div>
+                            <p class="product-price">€8.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Paneer Biryani</span>
+                                <p>succulent paneer marinated in spices, slow-cooked with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/shrims-biryani.jpg' %}" alt="Shrimps Biryani" height="250">
+                            </div>
+                            <p class="product-price">€8.90</p>
+                            <div class="product-details">
+                                <span class="product-name">Shrimps Biryani</span>
+                                <p>succulent shrimps marinated in spices, slow-cooked with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/everest-special-biryani.webp' %}" alt="Everest Special Biryani" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Biryani</span>
+                                <p>succulent chicken with bone marinated in nepali spices, slow-cooked with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/khawa-pulao.avif' %}" alt="Khawa Pulao" height="250">
+                            </div>
+                            <p class="product-price">€7.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Khawa Pulao</span>
+                                <p>basmati rice, vegetable with honey sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/kasmi-pulao.webp' %}" alt="Kasmi Pulao" height="250">
+                            </div>
+                            <p class="product-price">€7.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Kasmi Pulao</span>
+                                <p>indian curry sauce with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/vegetable-pulao.webp' %}" alt="Vegetable Pulao" height="250">
+                            </div>
+                            <p class="product-price">€6.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Pulao</span>
+                                <p>mixed vegetable with basmati rice</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/vegetable-momo.jpg' %}" alt="Vegetable Momo" height="250">
+                            </div>
+                            <p class="product-price">€8.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Vegetable Momo</span>
+                                <p>dumpling with juicy vegetables fillings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/chicken-momos.jpg' %}" alt="Chicken Momo" height="250">
+                            </div>
+                            <p class="product-price">€9.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Chicken Momo</span>
+                                <p>dumpling with juicy chicken fillings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/everest-special-momo.jpg' %}" alt="Everest Special Momo" height="250">
+                            </div>
+                            <p class="product-price">€10.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Momo</span>
+                                <p>authentic nepali dumpling with juicy fillings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/sizzler-salmon.jpeg' %}" alt="Sizzler Salmon" height="250">
+                            </div>
+                            <p class="product-price">€15.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Sizzler Salmon</span>
+                                <p>grilled salmon, noodles, broccoli, green salad with sizzler sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix everest-specials">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/everest-specials/sizzler-chicken-with-wok-vegetable.jpeg' %}" alt="Sizzler Chicken with Wok Vegetable" height="250">
+                            </div>
+                            <p class="product-price">€13.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Sizzler Chicken with Wok Vegetable</span>
+                                <p>noodles, wok vegetable with sizzler sauce</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix desserts">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/desserts/ice-cream-with-fruits.jpg' %}" alt="Ice-Cream with Fruits" height="250">
+                            </div>
+                            <p class="product-price">€5.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Ice-Cream with Fruits</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix desserts">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/desserts/ice-cream-with-mango-puree.avif' %}" alt="Ice-Cream with Mango Puree" height="250">
+                            </div>
+                            <p class="product-price">€5.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Ice-Cream with Mango Puree</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix desserts">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/desserts/fried-bananas-with-icecream.jpeg' %}" alt="Fried Banana with Ice-Cream" height="250">
+                            </div>
+                            <p class="product-price">€6.00</p>
+                            <div class="product-details">
+                                <span class="product-name">Fried Banana with Ice-Cream</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix desserts">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/desserts/gulab-jamun.png' %}" alt="Gulab Jamun" height="250">
+                            </div>
+                            <p class="product-price">€6.50</p>
+                            <div class="product-details">
+                                <span class="product-name">Gulab Jamun</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-4 mix desserts">
+                        <div class="product-card">
+                            <div class="product-img">
+                                <img src="{% static 'assets/menu/desserts/everest-special-banana-pocket-with-icecream.webp' %}" alt="Everest Special Banana Pocket with Ice-Cream" height="250">
+                            </div>
+                            <p class="product-price">€6.90</p>
+                            <div class="product-details">
+                                <span class="product-name">Everest Special Banana Pocket with Ice-Cream</span>
+                            </div>
+                        </div>
+                    </div>
+
 
 
                 </div>
