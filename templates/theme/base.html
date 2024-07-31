@@ -296,7 +296,25 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var swiper = new Swiper('.bannerSlider', {
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.banner-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+</script>
 <!-- Preloader -->
 <script src="{% static 'assets/js/jquery/jquery.min.js' %}"></script>
 <script>
