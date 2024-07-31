@@ -1,6 +1,6 @@
 {% extends 'theme/base2.html' %}
 {% load static %}
-{% block title %}Menu{% endblock title %}
+{% block title %}About Us{% endblock title %}
 {% block breadcrumbs %}
 <!-- ========Breadcrumbs section========= -->
 <div class="page-banner" data-background="{% static 'assets/img/page-ban-bg.webp' %}">
@@ -165,10 +165,9 @@
     </div>
 </section>
 <!-- =========About end====== -->
-
 <!-- ======check section======== -->
 <section>
-    <div class="availability mb-120" data-background="assets/img/subscribe-bg.png">
+    <div class="availability mb-120" data-background="{% static 'assets/defaults/subscribe-bg.webp' %}">
         <!-- bg availa  -->
         <div class="bg-availa">
             <!-- container  -->
@@ -179,8 +178,7 @@
                     <div class="row">
                         <div class="col-md-6 col-xl-8 col-lg-7 my-2" data-aos="fade-right" data-aos-duration="1000">
                             <div class="available-content">
-                                <a href="#" class="video-btn play-video"><span
-                                        class="icofont-ui-play"></span></a>
+                                <a href="#" class="video-btn play-video"><span class="icofont-ui-play"></span></a>
                                 <h2 class="available-head">
                                     We Have Excellent Of Quality <br> Indian, Nepali and Thai Dishes
                                 </h2>
@@ -194,10 +192,6 @@
                                         <h2 class="note-title mb-0">Check Availability</h2>
                                     </div>
                                     <ul class="note-ul">
-                                        <li class="note-li">
-                                            <p class="day">Sunday</p>
-                                            <p class="time">11:00 - 20:00</p>
-                                        </li>
                                         <li class="note-li">
                                             <p class="day">Monday</p>
                                             <p class="time">11:00 - 20:00</p>
@@ -222,6 +216,10 @@
                                             <p class="day">Saturday</p>
                                             <p class="time">11:00 - 20:00</p>
                                         </li>
+                                        <li class="note-li">
+                                            <p class="day">Sunday</p>
+                                            <p class="time">11:00 - 20:00</p>
+                                        </li>
                                     </ul>
 
                                     <div class="note-footer">
@@ -242,5 +240,111 @@
     </div>
 </section>
 <!-- ======check section end======== -->
+
+<!-- ==================Customers========== -->
+<section>
+    <!-- customer  -->
+    <div class="customer customer-1 cpy-8">
+        <!-- container  -->
+        <div class="container">
+            <!-- section head  -->
+            <div class="section-head text-center " data-aos="fade-up" data-aos-duration="1000">
+                <span class="sm-title ">Happy Customers</span>
+                <h2 class="sec-title">
+                    Our Guestbook
+                </h2>
+            </div>
+            <!-- section head end  -->
+            <div class="d-flex justify-content-center">
+                <div class="col-12 col-sm-12 col-md-10" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="swiper customer-review">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide review-item">
+                                <div class="row">
+                                    <div class="col-md-7 my-2">
+                                        <div class="review">
+                                            <img src="{% static 'assets/img/icon/7.png' %}" alt="" class="quotation">
+                                            <p>
+                                                Everest Grill & Resto exceeded all my expectations! The food is consistently delicious, with a wonderful variety that caters to every palate. The vibrant decor and warm, inviting atmosphere make it a pleasure to dine in. Plus, the convenience of their delivery service is a huge bonus. This place is a true treasure!
+                                            </p>
+                                            <h3 class="customer-name mb-0">Reson Roy
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 my-2">
+                                        <div class="customer-img">
+                                            <img src="{% static 'assets/img/customer/1.png' %}" alt="Image Not found">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review-item">
+                                <div class="row">
+                                    <div class="col-md-7 my-2">
+                                        <div class="review">
+                                            <img src="{% static 'assets/img/icon/7.png' %}" alt="" class="quotation">
+                                            <p>Everest Grill & Resto is a culinary gem in Tallinn! The diverse menu, from savory Indian curries to flavorful Thai stir-fries, never fails to impress. Each bite is a delightful journey of flavors. The vibrant atmosphere and exceptional service create the perfect experience. Highly recommend for food lovers!
+                                            </p>
+
+                                            <h3 class="customer-name mb-0">Reson Roy <span>- Tool Customar</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 my-2">
+                                        <div class="customer-img">
+                                            <img src="{% static 'assets/img/customer/12.png' %}" alt="Image Not found">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review-item">
+                                <div class="row">
+                                    <div class="col-md-7 my-2">
+                                        <div class="review">
+                                            <img src="{% static 'assets/img/icon/7.png' %}" alt="" class="quotation">
+                                            <p>An absolute must-visit! Everest Grill & Resto offers an unparalleled variety of Asian cuisine, and their Shaslik grilled meats are a standout. The ambiance is vibrant and welcoming, making it an ideal spot for both casual meals and special occasions. The delivery service through Bolt and Wolt is also prompt and reliable. Can't wait to return!
+                                            </p>
+
+                                            <h3 class="customer-name mb-0">Reson Roy <span>- Tool Customar</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 my-2">
+                                        <div class="customer-img">
+                                            <img src="{% static 'assets/img/customer/12.png' %}" alt="Image Not found">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide review-item">
+                                <div class="row">
+                                    <div class="col-md-7 my-2">
+                                        <div class="review">
+                                            <img src="{% static 'assets/img/icon/7.png' %}" alt="" class="quotation">
+                                            <p>Dining at Everest Grill & Resto is always a fantastic experience. The menu boasts an impressive range of dishes, each expertly crafted. The flavors are authentic and delicious, whether you’re indulging in Indian, Thai, or Chinese cuisine. The restaurant's lively atmosphere and attentive staff add to the overall charm. Highly recommend to anyone in Tallinn!
+                                            </p>
+
+                                            <h3 class="customer-name mb-0">Reson Roy <span>- Tool Customar</span>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 my-2">
+                                        <div class="customer-img">
+                                            <img src="{% static 'assets/img/customer/12.png' %}" alt="Image Not found">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container end  -->
+    </div>
+    <!-- custome end  -->
+</section>
+<!-- ==================Customers end========== -->
 
 {% endblock maincontent %}

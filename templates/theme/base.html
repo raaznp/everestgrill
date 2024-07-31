@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Everest Grill">
     <meta name="keywords" content="Everest Grill & Restro, Everest Grill, Restro in Tallin, Restro in Estonia, Best Restro in Estonia, Best Restaurant in Estonia, Best Restri in Tallin, Best Restaurant in Tallin, Food, Restaurant, Estonia, Tallin, Authentic Food in Tallin, Authentic Food in Estonia, Authentic Food in Europe">
@@ -111,8 +111,8 @@
                 <div class="dr-sidebar-contact mb-40">
                     <h4 class="dr-sidebar-contact-title">Contact Info</h4>
                     <span class="sidebar-address"><i class="icofont-google-map"></i><span>Narva mnt 15, Tallinn, Estonia</span> </span>
-                    <a href="tel:+1(251)410-1010"><i class="icofont-phone"></i><span>+372 5450 2301</span></a>
-                    <a href="mailto:example@gmail.com" class="theme-3"><i class="icofont-envelope-open"></i><span><span>info@everestgrill.ee</span></span></a>   
+                    <a href="tel:+372 5450 2301"><i class="icofont-phone"></i><span>+372 5450 2301</span></a>
+                    <a href="mailto:info@everestgrill.ee" class="theme-3"><i class="icofont-envelope-open"></i><span><span>info@everestgrill.ee</span></span></a>   
                 </div>
 
                 <div class="dr-sidebar-social mt-40 mb-30">
@@ -173,11 +173,11 @@
                                         <h4 class="footer-widget-title">Quick links</h4>
                                     </div>
                                     <ul class="qu-link">
-                                        <li class="foot-list"><a href="#" class="footer-link">Home</a></li>
-                                        <li class="foot-list"><a href="#" class="footer-link">About Us</a></li>
+                                        <li class="foot-list"><a href="{% url 'home' %}" class="footer-link">Home</a></li>
+                                        <li class="foot-list"><a href="{% url 'about' %}" class="footer-link">About Us</a></li>
                                         <li class="foot-list"><a href="#" class="footer-link">Gallery</a></li>
-                                        <li class="foot-list"><a href="#" class="footer-link">Menu</a></li>
-                                        <li class="foot-list"><a href="#" class="footer-link">Menu</a></li>
+                                        <li class="foot-list"><a href="{% url 'menu' %}" class="footer-link">Menu</a></li>
+                                        <li class="foot-list"><a href="#" class="footer-link">Team</a></li>
                                         <li class="foot-list"><a href="#" class="footer-link">Contact Us</a></li>
                                         <li class="foot-list"><a href="#" class="footer-link">Reservation</a></li>
                                     </ul>
@@ -191,22 +191,22 @@
                                     </div>
                                     <ul class="insta-feed">
                                         <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
+                                            <a href="#" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
                                         </li>
                                         <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/2.png' %}" alt=""></a>
+                                            <a href="#" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
                                         </li>
                                         <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/3.png' %}" alt=""></a>
+                                            <a href="#" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
                                         </li>
                                         <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/4.png' %}" alt=""></a>
+                                            <a href="#" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
                                         </li>
                                         <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/5.png' %}" alt=""></a>
+                                            <a href="#" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
                                         </li>
                                         <li class="foot-list">
-                                            <a href="https://www.instagram.com/" class="footer-link"><img src="{% static 'assets/img/instagram/6.png' %}" alt=""></a>
+                                            <a href="#" class="footer-link"><img src="{% static 'assets/img/instagram/1.png' %}" alt=""></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -291,7 +291,7 @@
     <!-- ======custom script====== -->
     <script src="{% static 'assets/js/app.js' %}"></script>
     <!-- ========mixitup init========= -->
-    <script src="{% static 'assets/js/mixitup.js' %}"></script>
+    <script src="{% static 'assets/js/mixitup.init.min.js' %}"></script>
    <!-- ========gsap animation effect========= -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
