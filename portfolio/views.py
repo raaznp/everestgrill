@@ -31,3 +31,10 @@ class ReservationView(ListView):
 class HomeSliderView(ListView):
     model = HomeSlider
     template_name = "theme/index.html"
+
+
+
+
+# custom 404 view
+def custom_404(request, exception):
+    return render(request, '404.html')
