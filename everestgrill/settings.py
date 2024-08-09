@@ -69,9 +69,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:9000",
     "http://127.0.0.1:9000",
     "https://cdnjs.cloudflare.com",
-    "https://fonts.googleapis.com",
-    "https://fonts.gstatic.com",
-    "https://googletagmanager.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -80,9 +77,6 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:9000",
     "http://127.0.0.1:9000",
     "https://cdnjs.cloudflare.com",
-    "https://fonts.googleapis.com",
-    "https://fonts.gstatic.com",
-    "https://googletagmanager.com",
 ]
 
 
