@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8_tn_jno4*yx8r4y@i6^!wm=qm+hs7*_ebv^ejh3iaw*l@!u38'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 MAINTENANCE_MODE = False
 
@@ -69,6 +69,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:9000",
     "http://127.0.0.1:9000",
     "https://cdnjs.cloudflare.com",
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://googletagmanager.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -77,6 +80,9 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:9000",
     "http://127.0.0.1:9000",
     "https://cdnjs.cloudflare.com",
+    "https://fonts.googleapis.com",
+    "https://fonts.gstatic.com",
+    "https://googletagmanager.com",
 ]
 
 
@@ -154,9 +160,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 #STATIC_ROOT =  os.path.join(BASE_DIR,'static')
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-)
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
